@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Mukta:wght@300;400;600;700;800&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>AjouterProf</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+           M2L
+        </div>
+        <ul>
+           
+           <li><a href="index.html">Adhérents</a></li>
+           <li><a href="prof.html">Prof</a></li>
+           <li><a href="planning.html">Planning</a></li>
+           <li><a href="https://www.google.com/">Déconnexion</a></li>
+        </ul>
+     </nav>
+     
+    <main>
+        <br><br><br><br><br><br><br><br><br><br>
+        <h2>Ajout des professeurs</h2>
+        
+        <div class="container">
+            
+            <div class="inputs">
+                
+                <input type="text" id="nom-input" required>
+                <label>Nom</label>
+            </div>
+            <div class="inputs">
+                <input type="text" id="prenom-input" required>
+                <label>Prénom</label>
+            </div>
+            <button class="button button-2" id="add-prof-btn">Ajouter Prof</button>
+        </div>
+        <section hidden id="sneaky">
+        <br><br>
+        <br><br><br><br><br><br><br><br>
+
+
+        <section hidden id="update-row">
+            <label>Nom:</label>
+            <input type="text" id="update-prof-input">
+            <button class="button button-2" id="update-row-btn">Modifier</button>
+        </section>
+        </section>  
+    </main>
+    <script src="ajouterprof.js"></script>
+    <br>
+    <footer>
+        <div class="footer-bottom">
+            <p>copyright &copy;2022  </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Mukta:wght@300;400;600;700;800&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>AjouterAdhérents</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+           M2L
+        </div>
+        <ul>
+           
+           <li><a href="index.html">Adhérents</a></li>
+           <li><a href="prof.html">Prof</a></li>
+           <li><a href="planning.html">Planning</a></li>
+           <li><a href="https://www.google.com/">Déconnexion</a></li>
+        </ul>
+     </nav>
+     
+    <main>
+        <br><br><br><br><br><br><br><br><br><br>
+        <h2>Ajout des adhérents</h2>
+        
+        <div class="container">
+            
+            <div class="inputs">
+                
+                <input type="text" id="name-input" required>
+                <label>Prénom</label>
+            </div>
+            <div class="inputs">
+                <input type="text" id="age-input" required>
+                <label>Age</label>
+            </div>
+            <button class="button button-2" id="add-name-btn">Ajouter Adhérent</button>
+        </div>
+        <section hidden id="sneaky">
+        <br><br>
+        <br><br><br><br><br><br><br><br>
+
+        <table id="table">
+            <thead>
+                
+                <th>Nom</th>
+                <th>Date d'Ajout</th>
+                <th>age</th>
+                <th>Supprimer</th>
+                <th>Modifier</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <section hidden id="update-row">
+            <label>Nom:</label>
+            <input type="text" id="update-name-input">
+            <button class="button button-2" id="update-row-btn">Modifier</button>
+        </section>
+        </section>  
+    </main>
+    <script src="ajouteradherents.js"></script>
+    <br>
+    <footer>
+        <div class="footer-bottom">
+            <p>copyright &copy;2022  </p>
+        </div>
+    </footer>
+</body>
+</html>

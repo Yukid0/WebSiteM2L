@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/stylesheet.css">
+
+
+
+
+</head>
+
+<body>
+   <nav>
+      <div class="logo">
+         M2L
+      </div>
+      <ul>
+
+         <li><a href="index.html">Adhérents</a></li>
+         <li><a href="prof.html">Prof</a></li>
+         <li><a href="planning.html">Planning</a></li>
+         <li><a href="https://www.google.com/">Déconnexion</a></li>
+      </ul>
+   </nav>
+
+   <main>
+      <br><br><br><br><br><br>
+      <h2>Ajout des cours</h2>
+      <div class="container">
+
+         <div class="inputs">
+
+            <input type="date" id="date-input" required>
+            <label>Date</label>
+         </div>
+         <div class="inputs">
+            <input type="text" id="heuredebut-input" required>
+            <label>Heure de Début</label>
+         </div>
+         <div class="inputs">
+            <input type="text" id="heurefin-input" required>
+            <label>Heure de Fin</label>
+         </div>
+         <select id="listeprof">
+
+         </select>
+         <select id="listegroupe">
+            <option value="Poussins">Poussins</option>
+            <option value="Benjamins">Benjamins</option>
+            <option value="Minimes">Minimes</option>
+            <option value="Cadets">Cadets</option>
+            <option value="Juniors">Juniors</option>
+            <option value="Séniors">Séniors</option>
+         </select>
+         <button class="button button-2" id="add-cours-btn">Ajouter Cours</button>
+      </div>
+
+
+
+   </main>
+   <script src="ajoutercours.js"></script>
+   <br>
+   <footer>
+      <div class="footer-bottom">
+         <p>copyright &copy;2022 </p>
+      </div>
+   </footer>
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+/* GENERAL */
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  background-color:#F5F5F5	 	;
+  min-height: 100vh;
+  font-family: Mukta, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0 5px 10px #bfc1c2;
+    background-color: white;
+    text-align: left;
+    overflow: hidden;
+    width: 100%;
+    margin: 50px auto;
+}
+
+thead {
+  box-shadow: 0 5px 10px #bfc1c2;
+
+}
+
+th {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing:0.1rem;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+
+td{
+  padding: 1rem 2rem;
+}
+
+tr:nth-child(even){
+  background-color: #F5F5F5;
+}
+
+
+
+
+
+/* BOUTONS */
+
+
+a.btn-grad {background-image: linear-gradient(to right, #1D976C 0%, #93F9B9  51%, #1D976C  100%)}
+a.btn-grad {
+   margin: 10px;
+   padding: 10px 30px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   text-decoration: none;
+ }
+
+ a.btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+
+  .button {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: #212121;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  .button-2 {
+    color: green;
+    border: 3px solid green;
+    background-image: linear-gradient(to right, transparent 50%, green 50%);
+    background-size: 200%;
+    background-position: 0%;
+  }
+  
+  .button-2:hover {
+    color: #FFF;
+    background-position: 100%;
+  }
+
+  .delete-row-btn{
+    
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: lightcoral;
+    color:#8b0000;
+    padding: 0.2rem 1rem;
+    text-align: center;
+  }
+
+  .delete-row-btn:hover {
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
+  }
+  
+  .edit-row-btn{
+    
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #fdfd96;
+    color:#ffc40c;
+    padding: 0.2rem 1rem;
+    text-align: center;
+  }
+
+  .edit-row-btn:hover {
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
+  }
+
+/* INPUTS */
+
+.container .inputs{
+  height: 40px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.container .inputs input{
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid gray;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.container .inputs input:focus{
+  border-color: crimson;
+}
+
+.container .inputs label{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  pointer-events: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.container .inputs input:focus ~ label,
+.container .inputs input:valid ~ label{
+  transform: translateY(-23px);
+  color: crimson;
+}
+
+  
+/* BARRE DE NAVIGATION*/
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  top:0;
+  position: fixed;
+  z-index:1;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+
+
+/*footer*/
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    color: #fff;
+  }
+  
+ .footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+  }
+  .footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+  }
+
+
+
+
+
+
+
+
+.container{
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width:400px ;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px #bfc1c2;
+  position: relative
+}
+
+/* TABLEAU */
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Mukta, sans-serif;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: $clr-gray500;
+  font-size: 0.9rem;
+  background-color: $clr-gray100;
+}
+

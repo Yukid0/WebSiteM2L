@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Mukta:wght@300;400;600;700;800&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Prof</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+           M2L
+        </div>
+        <ul>
+           
+            <li><a href="index.html">Adhérents</a></li>
+            <li><a class="active" href="prof.html">Prof</a></li>
+            <li><a href="planning.html">Planning</a></li>
+            <li><a href="https://www.google.com/">Déconnexion</a></li>
+        </ul>
+     </nav>
+     
+    <main>
+        <br><br><br><br><br>
+
+        
+       <a href="ajouterprof.html" class="btn-grad">Ajouter un Professeur</a>
+        
+
+        <table id="table">
+            <thead>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Date d'Ajout</th>
+                <th>Supprimer</th>
+                <th>Modifier</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <section hidden id="update-row">
+            <div class="container">
+                <div class="inputs">
+                    <input type="text" id="update-prof-input" required>
+                    <label>Nom</label>
+                    <hr style="height:10px; visibility:hidden;" />
+                    <button class="button button-2" id="update-row-btn">Modifier</button>
+                </div>
+            </div>
+        </section>
+        <br>
+    </main>
+    <script src="prof.js"></script>
+    <br><br><br><br><br><br><br>
+    <footer>
+        <div class="footer-bottom">
+            <p>copyright &copy;2022  </p>
+        </div>
+    </footer>
+</body>
+</html>
